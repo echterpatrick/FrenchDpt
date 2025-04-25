@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FrenchDpt</string>
+    <string name="code_d_partement">Code département</string>
+    <string name="chercher">Chercher</string>
+    <string name="mic">🎤</string>
+    <string name="effacer">Effacer</string>
+    <string name="ok">OK</string>
+    <string name="desc_departement">Localisation</string>
+    <string name="mic_desc">Reconnaissance vocale</string>
+    <string name="unknown">"Département inconnu"</string>
+    <string name="departement_result">%1$s - Chef-lieu : %2$s</string>
+</resources>
