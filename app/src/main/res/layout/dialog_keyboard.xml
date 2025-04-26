@@ -1,42 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="wrap_content"
-    android:layout_height="wrap_content" android:padding="16dp">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
 
-    <!-- Champ texte affichant la saisie en cours -->
-    <EditText
-        android:id="@+id/keyboardInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/code_d_partement"
-        android:focusable="false"
-        android:clickable="false"
-        android:textSize="24sp"
-        android:gravity="center"
-        android:layout_marginBottom="12dp" />
-
-    <!-- Clavier numérique -->
-    <GridLayout
-        android:id="@+id/keyboardGrid"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:columnCount="4"
-        android:rowCount="4">
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <!-- Boutons 1 à 9, A, B, 0, Effacer, OK -->
-        <Button android:id="@+id/btn1" android:text="1" style="@style/Widget.AppCompat.Button"/>
-        <Button android:id="@+id/btn2" android:text="2" style="@style/Widget.AppCompat.Button"/>
-        <Button android:id="@+id/btn3" android:text="3" style="@style/Widget.AppCompat.Button"/>
-        <Button android:id="@+id/btnA" android:text="A" style="@style/Widget.AppCompat.Button"/>
-        <Button android:id="@+id/btn4" android:text="4" style="@style/Widget.AppCompat.Button"/>
-        <Button android:id="@+id/btn5" android:text="5" style="@style/Widget.AppCompat.Button"/>
-        <Button android:id="@+id/btn6" android:text="6" style="@style/Widget.AppCompat.Button"/>
-        <Button android:id="@+id/btnB" android:text="B" style="@style/Widget.AppCompat.Button"/>
-        <Button android:id="@+id/btn7" android:text="7" style="@style/Widget.AppCompat.Button"/>
-        <Button android:id="@+id/btn8" android:text="8" style="@style/Widget.AppCompat.Button"/>
-        <Button android:id="@+id/btn9" android:text="9" style="@style/Widget.AppCompat.Button"/>
-        <Button android:id="@+id/btn0" android:text="0" style="@style/Widget.AppCompat.Button"/>
-        <Button android:id="@+id/btnDel" android:text="@string/effacer" style="@style/Widget.AppCompat.Button"/>
-        <Button android:id="@+id/btnOk" android:text="@string/ok" style="@style/Widget.AppCompat.Button"/>
-    </GridLayout>
+        <!-- Champ texte affichant la saisie en cours -->
+        <EditText
+            android:id="@+id/keyboardInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@color/white"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="@string/code_d_partement"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <!-- Clavier numérique -->
+        <GridLayout
+            android:id="@+id/keyboardGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="4">
+
+            <!-- Boutons 1 à 9, A, B, 0, Effacer, OK -->
+            <Button
+                android:id="@+id/btn1"
+                style="@style/Widget.AppCompat.Button"
+                android:background="@android:color/holo_blue_light"
+                android:text="1"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn2"
+                style="@style/Widget.AppCompat.Button"
+                android:background="@android:color/holo_blue_light"
+                android:text="2"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn3"
+                style="@style/Widget.AppCompat.Button"
+                android:background="@android:color/holo_blue_light"
+                android:text="3"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnA"
+                style="@style/Widget.AppCompat.Button"
+                android:background="@android:color/holo_blue_light"
+                android:text="A"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn4"
+                style="@style/Widget.AppCompat.Button"
+                android:background="@android:color/holo_blue_light"
+                android:text="4"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn5"
+                style="@style/Widget.AppCompat.Button"
+                android:background="@android:color/holo_blue_light"
+                android:text="5"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn6"
+                style="@style/Widget.AppCompat.Button"
+                android:background="@android:color/holo_blue_light"
+                android:text="6"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnB"
+                style="@style/Widget.AppCompat.Button"
+                android:background="@android:color/holo_blue_light"
+                android:text="B"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn7"
+                style="@style/Widget.AppCompat.Button"
+                android:background="@android:color/holo_blue_light"
+                android:text="7"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn8"
+                style="@style/Widget.AppCompat.Button"
+                android:background="@android:color/holo_blue_light"
+                android:text="8"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn9"
+                style="@style/Widget.AppCompat.Button"
+                android:background="@android:color/holo_blue_light"
+                android:text="9"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn0"
+                style="@style/Widget.AppCompat.Button"
+                android:background="@android:color/holo_blue_light"
+                android:text="0"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnDel"
+                style="@style/Widget.AppCompat.Button"
+                android:background="@android:color/holo_blue_light"
+                android:text="@string/effacer"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnOk"
+                style="@style/Widget.AppCompat.Button"
+                android:background="@android:color/holo_blue_light"
+                android:text="@string/ok"
+                android:textColor="@color/black" />
+        </GridLayout>
+    </LinearLayout>
 </LinearLayout>
